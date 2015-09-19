@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>New Mesh Surface Program</title>
+        <link href="mainCss.css" rel="stylesheet" type="text/css">
+        <script>
+            function navigation(value)
+            {
+                if(value===1)
+                {
+                    document.getElementById("myframe").src="inputPage.jsp";
+                }
+                if(value===2)
+                {
+                    document.getElementById("myframe").src="MeshShow.jsp";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Place For LOGO</h1>
+        </div>
+
+        <div id="nav">
+            <button class="mainButton" onclick="navigation(1)">View Mesh</button><br/><br/>
+            <button class="mainButton" onclick="navigation(2)">Solvation Energy</button><br/><br/>
+            <button class="mainButton" onclick="navigation(1)">Binding Energy</button><br/><br/>
+            <button class="mainButton" onclick="navigation(1)">Demo</button><br/><br/>
+            <button class="mainButton" onclick="navigation(1)">Documents</button>
+        </div>
+
+        <div id="section">
+            <iframe id="myframe" name="content" src=""></iframe>
+        </div>
+        <div id="sideImage">
+
+        </div>
+        <div id="footer">
+            Copyright UWM
+        </div>
+
+    </body>
+</html>
